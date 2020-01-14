@@ -1,0 +1,22 @@
+{
+  "name": "News",
+  "version": "1.0.0",
+  "description": "My posh Nuxt.js project",
+  "author": "hoangha-fedev",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "@nuxtjs/axios": "^5.3.6"
+  },
+  "devDependencies": {
+    "@mdi/font": "^4.7.95",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "material-design-icons-iconfont": "^5.0.1"
+  }
+}
