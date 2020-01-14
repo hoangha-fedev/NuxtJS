@@ -39,7 +39,7 @@ export default {
   }),
   async asyncData({ app }) {
     const { articles } = await app.$axios.$get(
-      "https://newsapi.org/v2/everything?q=bitcoin&from=2019-12-13&sortBy=publishedAt&apiKey=9b96c965994f43a6adc455e8ab0ff883"
+      "https://newsapi.org/v2/everything?q=bitcoin&from=2019-12-14&sortBy=publishedAt&apiKey=9b96c965994f43a6adc455e8ab0ff883"
     );
     return { articles };
   }

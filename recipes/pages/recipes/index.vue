@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 .recipes {
-    display: flex; flex-flow: wrap
+    display: flex; flex-flow: wrap; justify-content: center;
 }
 
 .recipe {

@@ -84,12 +84,12 @@ export default {
           to: '/inspire'
         },
         {
-          icon: 'subject',
+          icon: 'mdi-newspaper-variant-multiple-outline',
           title: 'News',
           to: '/news'
         },
         {
-          icon: 'group_work',
+          icon: 'mdi-nature-people',
           title: 'About',
           to: '/about'
         },

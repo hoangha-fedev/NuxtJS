@@ -37,4 +37,6 @@ a { text-decoration: none; color: #333 }
   width: 100%;
   height: 200px;
 }
+
+p {text-align: center;}
 </style>
