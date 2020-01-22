@@ -7,22 +7,24 @@
         </md-button>
         <nuxt-link class="md-primary md-title" to="/">NuxtsNews</nuxt-link>
 
-        <!-- <div class="md-toolbar-section-end">
+        <div class="md-toolbar-section-end">
           <template v-if="isAuthenticated">
             <md-button>
               <md-avartar>
-                {{user.email}}
+                <img :src="user.avatar" :alt="user.email">
               </md-avartar>
+              {{user.email}}
             </md-button>
+            <md-button>Logout</md-button>
           </template>
 
           <template v-else>
             <md-button @click="$router.push('/login')">Login</md-button>
             <md-button @click="$router.push('/register')">Register</md-button>
           </template>
-          <md-button class="md-primary" @click="showSearchDialog = true">Search</md-button>
+          <!-- <md-button class="md-primary" @click="showSearchDialog = true">Search</md-button> -->
           <md-button class="md-primary" @click="showRightSidepanel = true">Categories</md-button>
-        </div> -->
+        </div>
       </md-toolbar>
 
       <!-- Peronal News Feed (Lrft Drawer) -->
@@ -31,7 +33,7 @@
           <span class="md-title">Personal Feed</span>
         </md-toolbar>
 
-        <md-progess-bar v-if="loading" md-mode="indeterminate"></md-progess-bar>
+        <md-progress-bar v-if="loading" md-mode="indeterminate"></md-progress-bar>
 
         <md-field>
           <label for="country">Country</label>
@@ -153,6 +155,12 @@ export default {
     },
     loading() {
       return this.$store.getters.loading;
+    },
+    user() {
+      return this.$store.getters.user;
+    },
+    isAuthenticated() {
+      return this.$store.getters.isAuthenticated;
     }
   },
   methods: {

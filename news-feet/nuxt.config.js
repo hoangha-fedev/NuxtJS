@@ -59,6 +59,10 @@ export default {
     "/api" : {
       target: "https://newsapi.org/v2/",
       pathRewrite: { "^/api/": ""}
+    },
+    "/register" : {
+      target : "https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken?key=AIzaSyCDPYHZ6ZOUw2ZTR0IYINk8AfPZr1y5PL4",
+      pathRewrite: { "^/register": "" }
     }
   },
   env: {
